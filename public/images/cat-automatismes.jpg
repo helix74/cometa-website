@@ -1,0 +1,26 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E2E8F0" />
+      <stop offset="100%" style="stop-color:#CBD5E0" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg2)"/>
+  
+  <!-- Barrière automatique -->
+  <rect x="50" y="150" width="300" height="20" fill="#1A202C"/>
+  <rect x="50" y="150" width="150" height="20" fill="#F6AD55"/>
+  
+  <!-- Moteur -->
+  <rect x="320" y="120" width="40" height="60" fill="#3182CE" rx="5"/>
+  <circle cx="340" cy="150" r="15" fill="#1A202C"/>
+  
+  <!-- Télécommande -->
+  <rect x="80" y="200" width="60" height="40" fill="#F6AD55" rx="8"/>
+  <rect x="90" y="210" width="40" height="20" fill="#1A202C" rx="3"/>
+  
+  <!-- Texte -->
+  <text x="200" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1A202C">
+    Automatismes
+  </text>
+</svg> 

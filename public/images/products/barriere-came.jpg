@@ -1,0 +1,47 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-came" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F7FAFC" />
+      <stop offset="100%" style="stop-color:#EDF2F7" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-came)"/>
+  
+  <!-- Base de la barrière -->
+  <rect x="50" y="180" width="300" height="15" fill="#1A202C"/>
+  <rect x="60" y="160" width="280" height="20" fill="#3182CE"/>
+  
+  <!-- Poteau de support -->
+  <rect x="180" y="120" width="40" height="60" fill="#1A202C" rx="5"/>
+  
+  <!-- Bras de la barrière (ouvert) -->
+  <rect x="220" y="115" width="120" height="10" fill="#F6AD55" rx="5"/>
+  
+  <!-- Contrepoids -->
+  <rect x="160" y="115" width="20" height="10" fill="#F6AD55" rx="5"/>
+  
+  <!-- Logo CAME -->
+  <rect x="185" y="125" width="30" height="15" fill="#F6AD55" rx="3"/>
+  <text x="200" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1A202C">CAME</text>
+  
+  <!-- Feux de signalisation -->
+  <circle cx="90" cy="140" r="5" fill="#FF6B6B"/>
+  <circle cx="310" cy="140" r="5" fill="#51CF66"/>
+  
+  <!-- Capteurs de sécurité -->
+  <rect x="70" y="200" width="8" height="15" fill="#3182CE" rx="2"/>
+  <rect x="322" y="200" width="8" height="15" fill="#3182CE" rx="2"/>
+  
+  <!-- Véhicule (silhouette) -->
+  <rect x="120" y="220" width="80" height="25" fill="#4A5568" rx="5"/>
+  <circle cx="135" cy="250" r="8" fill="#1A202C"/>
+  <circle cx="185" cy="250" r="8" fill="#1A202C"/>
+  
+  <!-- Titre produit -->
+  <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1A202C">
+    Barrière Automatique CAME
+  </text>
+  <text x="200" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#4A5568">
+    Contrôle d'Accès Sécurisé
+  </text>
+</svg> 

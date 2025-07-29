@@ -1,0 +1,34 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-portes" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E2E8F0" />
+      <stop offset="100%" style="stop-color:#CBD5E0" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg-portes)"/>
+  
+  <!-- Porte de garage sectionnelle -->
+  <rect x="150" y="100" width="300" height="200" fill="#1A202C" stroke="#F6AD55" stroke-width="4" rx="8"/>
+  <rect x="160" y="110" width="280" height="180" fill="#3182CE" opacity="0.8"/>
+  
+  <!-- Sections de la porte -->
+  <line x1="160" y1="155" x2="440" y2="155" stroke="#F6AD55" stroke-width="2"/>
+  <line x1="160" y1="200" x2="440" y2="200" stroke="#F6AD55" stroke-width="2"/>
+  <line x1="160" y1="245" x2="440" y2="245" stroke="#F6AD55" stroke-width="2"/>
+  
+  <!-- Poignée -->
+  <rect x="400" y="195" width="30" height="10" fill="#F6AD55" rx="5"/>
+  
+  <!-- Système d'ouverture -->
+  <rect x="470" y="120" width="80" height="60" fill="#3182CE" rx="8"/>
+  <circle cx="510" cy="150" r="15" fill="#F6AD55"/>
+  <text x="510" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1A202C">M</text>
+  
+  <!-- Titre -->
+  <text x="300" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1A202C">
+    Portes & Fermetures
+  </text>
+  <text x="300" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#4A5568">
+    Sécurité • Esthétique • Confort
+  </text>
+</svg> 

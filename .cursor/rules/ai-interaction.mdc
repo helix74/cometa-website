@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Règles d'interaction avec l'IA pour le projet Cometa.
+alwaysApply: true
+---
+
+# Rules for AI
+
+- Avant toute modification de code ou création de fichier, présente-moi un plan d'action concis en 2 ou 3 points.
+- Après avoir généré un composant, montre-moi toujours comment l'importer et l'utiliser dans son composant parent.
+- Si une bibliothèque doit être installée, fournis-moi la commande exacte `npm install ...` et attends ma confirmation avant de continuer.
+- Privilégie la création de composants plus petits et spécialisés plutôt que de gros composants monolithiques.
+- Si je te donne une instruction ambiguë, pose-moi une question pour clarifier plutôt que de faire une supposition.
+- Respecte toujours la stratégie UX définie pour Cometa : segmentation B2B/B2C, navigation claire, et conversion optimisée.
+

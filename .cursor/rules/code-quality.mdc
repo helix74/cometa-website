@@ -1,0 +1,38 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Règles de qualité de code pour le projet Cometa.
+alwaysApply: true
+---
+
+# Règles de Qualité de Code
+
+- Utilise toujours TypeScript avec un typage strict.
+- Crée des composants React fonctionnels via des arrow functions (const MyComponent = () => ...). Pas de class components.
+- L'interface des props doit être nommée 'Props' et définie juste au-dessus du composant.
+- Écris du code sémantique et accessible. Utilise les balises HTML appropriées (nav, main, section, article...) et ajoute les attributs ARIA de base lorsque c'est pertinent (ex: aria-label pour les boutons avec icône).
+- Assure la compatibilité mobile-first et le responsive design pour tous les composants.
+
+## ⚠️ Interdictions
+
+- ❌ Pas de `any` en TypeScript (sauf cas exceptionnels justifiés).
+- ❌ Pas de styles inline (sauf cas exceptionnels justifiés).
+- ❌ Pas de `console.log` en production (à retirer avant le déploiement).
+- ❌ Pas de couleurs en dehors de la palette Cometa définie dans `tailwind-style.mdc`.
+- ❌ Pas de composants sans interface TypeScript pour leurs props.
+
+## ✅ Bonnes Pratiques Générales
+
+- ✅ Utiliser `cn()` (ou `clsx`/`twMerge`) pour les classes conditionnelles.
+- ✅ Préférer la création de composants réutilisables et spécialisés.
+- ✅ Optimiser toutes les images avec `next/image`.
+- ✅ Respecter la hiérarchie sémantique HTML pour une meilleure accessibilité et SEO.
+- ✅ Tester le rendu et les fonctionnalités sur différents navigateurs.
+- ✅ Valider l'accessibilité avec des outils automatisés (ex: Lighthouse, Axe).
+- ✅ Assurer un contraste suffisant pour les textes et éléments interactifs.
+- ✅ Garantir une navigation clavier fonctionnelle pour tous les éléments interactifs.
+- ✅ Utiliser des `alt text` descriptifs pour toutes les images.
+

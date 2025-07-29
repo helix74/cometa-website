@@ -1,0 +1,33 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E2E8F0" />
+      <stop offset="100%" style="stop-color:#CBD5E0" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg4)"/>
+  
+  <!-- Structure métallique -->
+  <rect x="80" y="100" width="240" height="120" fill="none" stroke="#1A202C" stroke-width="4"/>
+  <rect x="90" y="110" width="220" height="100" fill="#3182CE" opacity="0.6"/>
+  
+  <!-- Poutres -->
+  <rect x="100" y="120" width="200" height="8" fill="#F6AD55"/>
+  <rect x="100" y="140" width="200" height="8" fill="#F6AD55"/>
+  <rect x="100" y="160" width="200" height="8" fill="#F6AD55"/>
+  
+  <!-- Profilés -->
+  <rect x="120" y="180" width="8" height="30" fill="#1A202C"/>
+  <rect x="140" y="180" width="8" height="30" fill="#1A202C"/>
+  <rect x="160" y="180" width="8" height="30" fill="#1A202C"/>
+  <rect x="180" y="180" width="8" height="30" fill="#1A202C"/>
+  <rect x="200" y="180" width="8" height="30" fill="#1A202C"/>
+  <rect x="220" y="180" width="8" height="30" fill="#1A202C"/>
+  <rect x="240" y="180" width="8" height="30" fill="#1A202C"/>
+  <rect x="260" y="180" width="8" height="30" fill="#1A202C"/>
+  
+  <!-- Texte -->
+  <text x="200" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1A202C">
+    Construction Métallique
+  </text>
+</svg> 

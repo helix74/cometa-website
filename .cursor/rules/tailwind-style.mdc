@@ -1,0 +1,110 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Guidance spécifique au projet Cometa (automatisme et fermetures).
+alwaysApply: true
+---
+
+# Guidance Spécifique au Projet Cometa
+
+## Contexte du Projet
+- Cometa est un spécialiste tunisien en automatisme, fermetures industrielles et résidentielles, et construction métallique.
+- Le site cible à la fois les professionnels (B2B) et les particuliers (B2C).
+- L'objectif principal est d'augmenter de 40% les demandes de devis qualifiées.
+
+## Stratégie UX
+- Segmentation claire B2B/B2C dès la page d'accueil.
+- Navigation par catégories de produits : Portes & Fermetures, Automatismes & Contrôle d'Accès, Aménagements Extérieurs, Construction Métallique.
+- Système de filtrage et de recherche puissant pour le catalogue produits.
+- Formulaires intelligents qui s'adaptent au type de demande.
+
+## Palette de Couleurs
+- anthracite: '#1A202C'
+- acier-clair: '#E2E8F0'
+- bleu-technique: '#3182CE'
+- orange-securite: '#F6AD55'
+
+## Ton et Style
+- Professionnel mais accessible.
+- Technique sans être intimidant.
+- Mise en avant de l'expertise et de la fiabilité.
+
+## 🚀 Technologies & Standards
+
+### Stack Technique
+- **Next.js 15** avec App Router (à utiliser si disponible, sinon Next.js 14).
+- **TypeScript** obligatoire.
+- **Tailwind CSS** pour le styling.
+- **clsx + tailwind-merge** pour les classes conditionnelles (à installer si non présent).
+- **framer-motion** pour les animations (à installer si non présent).
+- **lucide-react** pour les icônes (à installer si non présent).
+
+### Performance & SEO
+- **Mobile-first** design obligatoire.
+- **Core Web Vitals** optimisés (LCP, FID, CLS).
+- **SEO** complet : Utiliser les `metadata` de Next.js pour `title`, `description`, `keywords`, `openGraph`, `twitter` pour chaque page.
+- **Accessibilité (A11y)** respectée : Utiliser les attributs ARIA, assurer la navigation clavier, contraste suffisant, focus visible, `alt text` pour les images.
+- **Optimisations obligatoires :** Lazy loading des images (`next/image`), code splitting automatique, minification des assets, compression des images, cache approprié.
+
+## 🎭 Animations & Interactions
+
+### Animations disponibles (classes Tailwind personnalisées ou Framer Motion)
+- `animate-slide-down` : Pour les éléments qui apparaissent du haut (ex: Header au chargement).
+- `animate-fade-in` : Pour les éléments qui apparaissent progressivement (ex: éléments au scroll).
+- `animate-fade-in-up` : Pour les éléments qui apparaissent du bas avec un fondu (ex: Footer au scroll, sections de page).
+
+### Transitions
+- **Durée par défaut :** 200ms pour les interactions (hover, click), 300ms pour les animations d'entrée/sortie.
+- **Easing :** `ease-out` pour les entrées, `ease-in-out` pour les hover et les animations plus fluides.
+
+## 📱 Responsive Design
+
+### Breakpoints Tailwind (standards)
+- `sm:` (640px+)
+- `md:` (768px+)
+- `lg:` (1024px+)
+- `xl:` (1280px+)
+
+### Approche
+- Commencer toujours par le design et le code pour mobile.
+- Ajouter les styles desktop en utilisant les modificateurs de breakpoints.
+- Tester sur une variété d'appareils et de tailles d'écran.
+
+## 📝 Documentation & Workflow
+
+### Commentaires
+- **JSDoc** pour les fonctions complexes et les composants réutilisables.
+- **Commentaires clairs** pour la logique métier complexe.
+
+### Git
+- **Commits** descriptifs et atomiques en français.
+- **Branches :** Utiliser une convention claire (ex: `feature/nom-fonctionnalite`, `bugfix/description-bug`).
+- **Pull requests :** Inclure une description complète des changements et des tests effectués.
+
+## 🧪 Testing
+
+### Tests recommandés
+- **Tests unitaires :** Pour les fonctions utilitaires et la logique métier isolée.
+- **Tests d'intégration :** Pour les formulaires, les interactions complexes et les flux utilisateur critiques.
+- **Tests E2E (End-to-End) :** Pour les parcours utilisateur critiques (ex: demande de devis, soumission de formulaire de contact).
+
+## 🔧 Configuration
+
+### Fichiers de configuration clés
+- `tailwind.config.ts` : Pour les couleurs personnalisées, les animations et les thèmes.
+- `next.config.ts` : Pour les optimisations spécifiques à Next.js (ex: images, redirections).
+- `tsconfig.json` : Pour une configuration TypeScript stricte et cohérente.
+
+## 🔧 Dépannage Tailwind CSS
+
+Si les classes Tailwind ne s'appliquent pas :
+1. Vérifiez que `tailwind.config.ts` inclut tous les dossiers de composants dans `content`.
+2. Vérifiez que `postcss.config.js` existe et contient les plugins `tailwindcss` et `autoprefixer`.
+3. Vérifiez que `src/app/globals.css` contient les directives `@tailwind`.
+4. Vérifiez que `globals.css` est importé dans `src/app/layout.tsx`.
+5. Redémarrez le serveur de développement (`npm run dev`).
+6. Supprimez le dossier `.next/` et relancez le serveur si nécessaire.
+

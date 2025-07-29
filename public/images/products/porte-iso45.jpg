@@ -1,0 +1,39 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-iso45" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F7FAFC" />
+      <stop offset="100%" style="stop-color:#EDF2F7" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-iso45)"/>
+  
+  <!-- Porte sectionnelle avec isolation -->
+  <rect x="80" y="60" width="240" height="180" fill="#1A202C" stroke="#F6AD55" stroke-width="3" rx="8"/>
+  <rect x="90" y="70" width="220" height="160" fill="#3182CE" opacity="0.9"/>
+  
+  <!-- Sections avec isolation visible -->
+  <rect x="100" y="80" width="200" height="30" fill="#E2E8F0" stroke="#F6AD55" stroke-width="1"/>
+  <rect x="100" y="115" width="200" height="30" fill="#E2E8F0" stroke="#F6AD55" stroke-width="1"/>
+  <rect x="100" y="150" width="200" height="30" fill="#E2E8F0" stroke="#F6AD55" stroke-width="1"/>
+  <rect x="100" y="185" width="200" height="30" fill="#E2E8F0" stroke="#F6AD55" stroke-width="1"/>
+  
+  <!-- Indicateur isolation (points) -->
+  <circle cx="120" cy="95" r="2" fill="#F6AD55"/>
+  <circle cx="140" cy="95" r="2" fill="#F6AD55"/>
+  <circle cx="160" cy="95" r="2" fill="#F6AD55"/>
+  
+  <!-- Poignée ergonomique -->
+  <rect x="280" y="140" width="35" height="15" fill="#F6AD55" rx="7"/>
+  
+  <!-- Label ISO45 -->
+  <rect x="340" y="80" width="50" height="20" fill="#3182CE" rx="3"/>
+  <text x="365" y="93" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">ISO45</text>
+  
+  <!-- Titre produit -->
+  <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1A202C">
+    Porte Sectionnelle ISO45
+  </text>
+  <text x="200" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#4A5568">
+    Isolation Thermique Optimale
+  </text>
+</svg> 

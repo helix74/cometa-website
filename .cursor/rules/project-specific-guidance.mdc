@@ -1,0 +1,43 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Guidance spécifique au projet Cometa (automatisme et fermetures).
+alwaysApply: true
+---
+
+# Guidance Spécifique au Projet Cometa
+
+## Contexte du Projet
+- Cometa est un spécialiste tunisien en automatisme, fermetures industrielles et résidentielles, et construction métallique.
+- Le site cible à la fois les professionnels (B2B) et les particuliers (B2C).
+- L'objectif principal est d'augmenter de 40% les demandes de devis qualifiées.
+
+## Stratégie UX
+- Segmentation claire B2B/B2C dès la page d'accueil.
+- Navigation par catégories de produits : Portes & Fermetures, Automatismes & Contrôle d'Accès, Aménagements Extérieurs, Construction Métallique.
+- Système de filtrage et de recherche puissant pour le catalogue produits.
+- Formulaires intelligents qui s'adaptent au type de demande.
+
+## Palette de Couleurs
+- anthracite: '#1A202C'
+- acier-clair: '#E2E8F0'
+- bleu-technique: '#3182CE'
+- orange-securite: '#F6AD55'
+
+## Ton et Style
+- Professionnel mais accessible.
+- Technique sans être intimidant.
+- Mise en avant de l'expertise et de la fiabilité.
+
+### ⚠️ Configuration Critique : Tailwind CSS
+
+**IMPORTANT :** Tailwind CSS DOIT être correctement configuré pour que les styles s'appliquent. Vérifiez impérativement :
+- `tailwind.config.ts` avec la palette de couleurs Cometa et les animations.
+- `postcss.config.js` avec les plugins `tailwindcss` et `autoprefixer`.
+- `src/app/globals.css` avec les directives `@tailwind base;`, `@tailwind components;`, `@tailwind utilities;`.
+- Import de `globals.css` dans `src/app/layout.tsx`.
+
+Si les styles ne s'appliquent pas, vérifiez ces fichiers en priorité et redémarrez le serveur de développement.

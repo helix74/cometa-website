@@ -1,0 +1,23 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E2E8F0" />
+      <stop offset="100%" style="stop-color:#CBD5E0" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg1)"/>
+  
+  <!-- Porte industrielle -->
+  <rect x="100" y="80" width="200" height="160" fill="#1A202C" stroke="#F6AD55" stroke-width="3"/>
+  <rect x="110" y="90" width="180" height="140" fill="#3182CE" opacity="0.8"/>
+  
+  <!-- Panneau de contrôle -->
+  <rect x="320" y="120" width="60" height="80" fill="#F6AD55" rx="5"/>
+  <circle cx="350" cy="140" r="8" fill="#1A202C"/>
+  <circle cx="350" cy="160" r="8" fill="#1A202C"/>
+  
+  <!-- Texte -->
+  <text x="200" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1A202C">
+    Portes & Fermetures
+  </text>
+</svg> 

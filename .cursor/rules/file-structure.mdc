@@ -1,0 +1,26 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Règles de structure de fichiers pour le projet Cometa.
+alwaysApply: true
+---
+
+# Règles de Structure de Fichiers
+
+- Les composants UI réutilisables vont dans `src/components/ui/`.
+- Les sections de page (composants de page spécifiques) vont dans `src/components/sections/`.
+- Les composants de layout (Header, Footer) vont dans `src/components/layout/`.
+- Les utilitaires et fonctions helper vont dans `src/lib/` (ex: `src/lib/utils.ts`).
+- Le nom de fichier des composants doit être en PascalCase (ex: `HeroSection.tsx`, `ProductCard.tsx`).
+- Le nom de fichier des pages Next.js doit être en kebab-case (ex: `contact-devis.tsx`).
+- Les images statiques vont dans `public/images/`.
+
+## Conventions de Nommage
+- **Composants :** PascalCase (`Header.tsx`, `ProductCard.tsx`).
+- **Fichiers de pages Next.js :** kebab-case (`contact-devis.tsx`).
+- **Variables :** camelCase (`isMenuOpen`, `navigationItems`).
+- **Constantes :** UPPER_SNAKE_CASE (`API_ENDPOINTS`).
+

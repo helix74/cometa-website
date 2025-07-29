@@ -1,0 +1,44 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-enroul" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F7FAFC" />
+      <stop offset="100%" style="stop-color:#EDF2F7" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-enroul)"/>
+  
+  <!-- Structure du garage -->
+  <rect x="60" y="80" width="280" height="160" fill="none" stroke="#1A202C" stroke-width="2"/>
+  
+  <!-- Caisson d'enroulement (compact) -->
+  <rect x="70" y="70" width="260" height="25" fill="#3182CE" rx="12"/>
+  <circle cx="200" cy="82" r="8" fill="#F6AD55"/>
+  
+  <!-- Rideau enroulé (visible) -->
+  <rect x="80" y="95" width="240" height="120" fill="#1A202C"/>
+  
+  <!-- Lames du rideau -->
+  <line x1="80" y1="105" x2="320" y2="105" stroke="#F6AD55" stroke-width="1"/>
+  <line x1="80" y1="115" x2="320" y2="115" stroke="#F6AD55" stroke-width="1"/>
+  <line x1="80" y1="125" x2="320" y2="125" stroke="#F6AD55" stroke-width="1"/>
+  <line x1="80" y1="135" x2="320" y2="135" stroke="#F6AD55" stroke-width="1"/>
+  <line x1="80" y1="145" x2="320" y2="145" stroke="#F6AD55" stroke-width="1"/>
+  <line x1="80" y1="155" x2="320" y2="155" stroke="#F6AD55" stroke-width="1"/>
+  
+  <!-- Motorisation compacte -->
+  <rect x="340" y="85" width="40" height="40" fill="#F6AD55" rx="5"/>
+  <circle cx="360" cy="105" r="10" fill="#1A202C"/>
+  <text x="360" y="109" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#F6AD55">M</text>
+  
+  <!-- Flèche gain de place -->
+  <path d="M20 150 L50 120" stroke="#3182CE" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="15" y="170" font-family="Arial, sans-serif" font-size="10" fill="#3182CE">Gain de place</text>
+  
+  <!-- Titre produit -->
+  <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1A202C">
+    Porte à Enroulement Compact
+  </text>
+  <text x="200" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#4A5568">
+    Encombrement Minimal
+  </text>
+</svg> 
