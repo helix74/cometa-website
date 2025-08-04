@@ -25,7 +25,7 @@ alwaysApply: true
 - anthracite: '#1A202C'
 - acier-clair: '#E2E8F0'
 - bleu-technique: '#3182CE'
-- orange-securite: '#F6AD55'
+- orange-securite: '#0859a8' (Nouveau bleu client - remplace l'ancien orange #F6AD55)
 
 ## Ton et Style
 - Professionnel mais accessible.

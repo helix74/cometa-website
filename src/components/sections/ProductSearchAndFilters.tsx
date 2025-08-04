@@ -86,11 +86,11 @@ const ProductSearchAndFilters = ({ className, onFiltersChange }: Props = {}) => 
                   value={filters.searchTerm}
                   onChange={(e) => handleFilterChange('searchTerm', e.target.value)}
                   placeholder="Rechercher par nom de produit, référence..."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-bleu-technique focus:border-bleu-technique outline-none transition-all duration-300 text-anthracite placeholder-gray-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-bleu-technique focus:border-bleu-technique outline-none transition-all duration-300 text-anthracite placeholder-anthracite placeholder-opacity-60"
                 />
                 <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                   <svg 
-                    className="w-5 h-5 text-gray-400" 
+                    className="w-5 h-5 text-anthracite" 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"

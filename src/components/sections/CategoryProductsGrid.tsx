@@ -166,7 +166,7 @@ const CategoryProductsGrid = ({
                           onChange={(e) => handleFilterChange(filter.id, e.target.value)}
                           className="w-4 h-4 text-bleu-technique focus:ring-bleu-technique border-gray-300"
                         />
-                        <span className="text-gray-700 group-hover:text-anthracite transition-colors duration-200">
+                        <span className="text-anthracite group-hover:text-bleu-technique transition-colors duration-200">
                           {option.label}
                         </span>
                       </label>
@@ -182,7 +182,7 @@ const CategoryProductsGrid = ({
                     setActiveFilters({});
                     setFilteredProducts(products);
                   }}
-                  className="w-full mt-4 py-2 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors duration-200"
+                  className="w-full mt-4 py-2 px-4 bg-gray-100 hover:bg-gray-200 text-anthracite rounded-lg transition-colors duration-200"
                 >
                   Réinitialiser les filtres
                 </button>

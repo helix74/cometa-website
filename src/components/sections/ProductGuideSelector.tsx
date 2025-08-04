@@ -133,7 +133,7 @@ const ProductGuideSelector = ({ className }: Props = {}) => {
             Quel Type de Porte Choisir ?
           </h2>
           <div className="w-24 h-1 bg-orange-securite mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-anthracite max-w-3xl mx-auto">
             Répondez à ces questions pour trouver votre solution idéale :
           </p>
         </motion.div>
@@ -179,7 +179,7 @@ const ProductGuideSelector = ({ className }: Props = {}) => {
                         />
                         <div className="text-center">
                           <div className="font-semibold mb-1">{option.label}</div>
-                          <div className="text-sm text-gray-600">{option.subtitle}</div>
+                          <div className="text-sm text-bleu-technique">{option.subtitle}</div>
                         </div>
                       </label>
                     ))}
@@ -242,7 +242,7 @@ const ProductGuideSelector = ({ className }: Props = {}) => {
                       "px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 inline-flex items-center space-x-2",
                       isFormComplete
                         ? "bg-bleu-technique hover:bg-blue-700 text-white shadow-lg hover:shadow-xl hover:scale-105"
-                        : "bg-gray-300 text-gray-500 cursor-not-allowed"
+                        : "bg-gray-300 text-anthracite cursor-not-allowed"
                     )}
                   >
                     <span>Voir ma Recommandation</span>
@@ -301,7 +301,7 @@ const ProductGuideSelector = ({ className }: Props = {}) => {
                             {recommendation.features.map((feature, index) => (
                               <div key={index} className="flex items-center space-x-2">
                                 <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
-                                <span className="text-gray-700 text-sm">{feature}</span>
+                                <span className="text-anthracite text-sm">{feature}</span>
                               </div>
                             ))}
                           </div>
@@ -313,7 +313,7 @@ const ProductGuideSelector = ({ className }: Props = {}) => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <button
                         onClick={resetGuide}
-                        className="px-6 py-2 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-gray-400 transition-colors duration-300"
+                        className="px-6 py-2 border-2 border-gray-300 text-anthracite rounded-lg hover:border-bleu-technique transition-colors duration-300"
                       >
                         Refaire le test
                       </button>

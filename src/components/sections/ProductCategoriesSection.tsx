@@ -30,7 +30,7 @@ const ProductCategoriesSection = ({ className }: Props = {}) => {
       title: 'Portes & Fermetures',
       subtitle: 'Portes & Fermetures',
       description: 'Solutions résidentielles et industrielles.',
-      image: '/images/cat-portes.jpg',
+      image: '/images/categories/portes-garage-moderne.jpg',
       href: '/produits/portes-fermetures'
     },
     {
@@ -38,7 +38,7 @@ const ProductCategoriesSection = ({ className }: Props = {}) => {
       title: 'Automatismes',
       subtitle: 'Automatismes & Contrôle d\'Accès',
       description: 'Motorisations, barrières et télécommandes.',
-      image: '/images/cat-automatismes.jpg',
+      image: '/images/categories/automatismes-controle.jpg',
       href: '/produits/automatismes'
     },
     {
@@ -46,7 +46,7 @@ const ProductCategoriesSection = ({ className }: Props = {}) => {
       title: 'Aménagements Extérieurs',
       subtitle: 'Aménagements Extérieurs',
       description: 'Stores, auvents et abris de voiture.',
-      image: '/images/cat-amenagements.jpg',
+      image: '/images/categories/amenagements-exterieurs.jpg',
       href: '/produits/amenagements-exterieurs'
     },
     {
@@ -54,7 +54,7 @@ const ProductCategoriesSection = ({ className }: Props = {}) => {
       title: 'Construction Métallique',
       subtitle: 'Construction Métallique',
       description: 'Fer forgé, tôles et profilés.',
-      image: '/images/cat-construction.jpg',
+      image: '/images/categories/construction-metallique.jpg',
       href: '/produits/construction-metallique'
     }
   ];

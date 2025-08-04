@@ -244,7 +244,7 @@ export default function EspaceProPage() {
                       name="email"
                       value={loginData.email}
                       onChange={handleLoginChange}
-                      className={`w-full px-4 py-3 rounded-lg border transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 ${
+                      className={`w-full px-4 py-3 rounded-lg border transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 text-anthracite placeholder-anthracite placeholder-opacity-60 ${
                         errors.email ? 'border-red-400' : 'border-acier-clair focus:border-bleu-technique'
                       }`}
                       placeholder="Votre email professionnel"
@@ -264,7 +264,7 @@ export default function EspaceProPage() {
                         name="password"
                         value={loginData.password}
                         onChange={handleLoginChange}
-                        className={`w-full px-4 py-3 rounded-lg border transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 pr-12 ${
+                        className={`w-full px-4 py-3 rounded-lg border transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 pr-12 text-anthracite placeholder-anthracite placeholder-opacity-60 ${
                           errors.password ? 'border-red-400' : 'border-acier-clair focus:border-bleu-technique'
                         }`}
                         placeholder="Votre mot de passe"

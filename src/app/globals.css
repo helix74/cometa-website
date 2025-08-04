@@ -17,7 +17,7 @@
   --color-anthracite: #1A202C;
   --color-acier-clair: #E2E8F0;
   --color-bleu-technique: #3182CE;
-  --color-orange-securite: #F6AD55;
+  --color-orange-securite: #0859a8; /* Nouveau bleu client au lieu de #F6AD55 */
   
   --animate-slide-down: slide-down 0.6s ease-out;
   --animate-fade-in: fade-in 0.8s ease-out;

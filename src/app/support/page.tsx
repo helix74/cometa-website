@@ -288,7 +288,7 @@ export default function SupportPage() {
                   placeholder="Rechercher une documentation..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 rounded-lg border border-acier-clair focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 focus:border-bleu-technique transition-colors duration-200"
+                  className="w-full pl-10 pr-4 py-3 rounded-lg border border-acier-clair focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 focus:border-bleu-technique transition-colors duration-200 text-anthracite placeholder-anthracite placeholder-opacity-60"
                 />
               </div>
             </motion.div>

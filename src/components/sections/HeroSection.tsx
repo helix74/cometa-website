@@ -30,7 +30,7 @@ const HeroSection = ({ className }: Props = {}) => {
         className="absolute inset-0 z-0"
       >
         <Image
-          src="/images/hero-bg.svg"
+          src="/images/hero-garage-main.jpg"
           alt="Cometa - Automatisme et Construction Métallique"
           fill
           className="object-cover"
@@ -72,32 +72,11 @@ const HeroSection = ({ className }: Props = {}) => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            {/* Bouton principal - Découvrir nos Produits */}
-            <motion.a
-              href="/produits"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn-primary bg-orange-securite hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-2xl transition-all duration-300 flex items-center space-x-2 group"
-            >
-              <span>Découvrir nos Produits</span>
-              <svg 
-                className="w-5 h-5 transition-transform group-hover:translate-x-1" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </motion.a>
-
-            {/* Bouton secondaire - Demander un Devis */}
-            <motion.a
-              href="/contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn-secondary border-2 border-white text-white hover:bg-white hover:text-anthracite px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center space-x-2 group"
+            <a 
+              href="/contact?type=devis" 
+              className="bg-orange-securite hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 inline-flex items-center space-x-2 group"
             >
               <span>Demander un Devis</span>
               <svg 
@@ -106,47 +85,46 @@ const HeroSection = ({ className }: Props = {}) => {
                 stroke="currentColor" 
                 viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </motion.a>
+            </a>
+            
+            <a 
+              href="/produits" 
+              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-anthracite px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 inline-flex items-center space-x-2 group"
+            >
+              <span>Voir nos Produits</span>
+              <svg 
+                className="w-5 h-5 transition-transform group-hover:translate-x-1" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </motion.div>
+
+          {/* Indicateurs de scroll vers le bas */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1, ease: "easeOut" }}
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          >
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              className="w-6 h-10 border-2 border-white rounded-full flex justify-center"
+            >
+              <motion.div
+                animate={{ y: [0, 12, 0] }}
+                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                className="w-1 h-3 bg-white rounded-full mt-2"
+              />
+            </motion.div>
           </motion.div>
         </div>
-      </div>
-
-      {/* Indicateur de scroll - repositionné pour éviter le chevauchement */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="flex flex-col items-center text-acier-clair"
-        >
-          <span className="text-sm mb-2">Découvrez nos services</span>
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </motion.div>
-      </motion.div>
-
-      {/* Éléments décoratifs */}
-      <div className="absolute top-20 left-10 opacity-20">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="w-20 h-20 border-2 border-orange-securite rounded-full"
-        />
-      </div>
-      
-      <div className="absolute bottom-20 right-10 opacity-20">
-        <motion.div
-          animate={{ rotate: -360 }}
-          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="w-16 h-16 border-2 border-bleu-technique rounded-full"
-        />
       </div>
     </section>
   );

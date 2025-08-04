@@ -15,7 +15,7 @@ Site web officiel de **Cometa**, spécialiste en automatismes, fermetures indust
 - **anthracite**: `#1A202C` (Couleur principale)
 - **acier-clair**: `#E2E8F0` (Couleur secondaire)
 - **bleu-technique**: `#3182CE` (Accent)
-- **orange-securite**: `#F6AD55` (CTA/Boutons)
+- **orange-securite**: `#0859a8` (CTA/Boutons - Nouveau bleu client)
 
 ## 📁 Structure du Projet
 

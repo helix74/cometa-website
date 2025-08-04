@@ -308,7 +308,7 @@ export default function ContactPage() {
                         name="nom"
                         value={formData.nom}
                         onChange={handleInputChange}
-                        className={`w-full px-4 py-3 rounded-lg border transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 ${
+                        className={`w-full px-4 py-3 rounded-lg border transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 text-anthracite placeholder-anthracite placeholder-opacity-60 ${
                           errors.nom ? 'border-red-400' : 'border-acier-clair focus:border-bleu-technique'
                         }`}
                         placeholder="Votre nom complet"
@@ -326,7 +326,7 @@ export default function ContactPage() {
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        className={`w-full px-4 py-3 rounded-lg border transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 ${
+                        className={`w-full px-4 py-3 rounded-lg border transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 text-anthracite placeholder-anthracite placeholder-opacity-60 ${
                           errors.email ? 'border-red-400' : 'border-acier-clair focus:border-bleu-technique'
                         }`}
                         placeholder="votre@email.com"
@@ -346,7 +346,7 @@ export default function ContactPage() {
                         name="telephone"
                         value={formData.telephone}
                         onChange={handleInputChange}
-                        className={`w-full px-4 py-3 rounded-lg border transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 ${
+                        className={`w-full px-4 py-3 rounded-lg border transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 text-anthracite placeholder-anthracite placeholder-opacity-60 ${
                           errors.telephone ? 'border-red-400' : 'border-acier-clair focus:border-bleu-technique'
                         }`}
                         placeholder="+216 XX XXX XXX"
@@ -364,7 +364,7 @@ export default function ContactPage() {
                         name="societe"
                         value={formData.societe}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 rounded-lg border border-acier-clair focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 focus:border-bleu-technique transition-colors duration-200"
+                        className="w-full px-4 py-3 rounded-lg border border-acier-clair focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 focus:border-bleu-technique transition-colors duration-200 text-anthracite placeholder-anthracite placeholder-opacity-60"
                         placeholder="Nom de votre société"
                       />
                     </div>
@@ -442,7 +442,7 @@ export default function ContactPage() {
                             name="referenceProduit"
                             value={formData.referenceProduit}
                             onChange={handleInputChange}
-                            className="w-full px-4 py-3 rounded-lg border border-acier-clair focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 focus:border-bleu-technique transition-colors duration-200"
+                            className="w-full px-4 py-3 rounded-lg border border-acier-clair focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 focus:border-bleu-technique transition-colors duration-200 text-anthracite placeholder-anthracite placeholder-opacity-60"
                             placeholder="Ex: ISO45-2021-001"
                           />
                         </div>
@@ -479,7 +479,7 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={handleInputChange}
                       rows={4}
-                      className="w-full px-4 py-3 rounded-lg border border-acier-clair focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 focus:border-bleu-technique transition-colors duration-200 resize-none"
+                      className="w-full px-4 py-3 rounded-lg border border-acier-clair focus:outline-none focus:ring-2 focus:ring-bleu-technique/50 focus:border-bleu-technique transition-colors duration-200 resize-none text-anthracite placeholder-anthracite placeholder-opacity-60"
                       placeholder={selectedRequest === 'autre' 
                         ? "Décrivez votre demande..." 
                         : "Informations complémentaires (optionnel)..."

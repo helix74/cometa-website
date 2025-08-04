@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 interface Props {
@@ -81,7 +82,17 @@ const Footer = ({ className }: Props = {}) => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-8 lg:mb-12"
         >
-          <h2 className="text-2xl lg:text-3xl font-bold mb-4">COMETA</h2>
+          <div className="flex items-center mb-4">
+            <Link href="/" className="focus-visible">
+              <Image
+                src="/images/logo.png"
+                alt="Logo Cometa"
+                width={160}
+                height={80}
+                className="h-16 w-auto filter brightness-0 invert transition-all duration-300 hover:scale-105"
+              />
+            </Link>
+          </div>
           <p className="text-acier-clair max-w-2xl text-lg">
             Spécialiste en automatismes, fermetures et construction métallique en Tunisie. 
             Votre partenaire de confiance pour des solutions durables et innovantes.
