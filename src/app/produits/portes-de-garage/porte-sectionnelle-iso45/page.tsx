@@ -89,12 +89,12 @@ const productData = {
     {
       text: 'Demander un Devis',
       href: '/contact?type=devis&produit=iso45',
-      variant: 'primary'
+      variant: 'primary' as const
     },
     {
       text: 'Télécharger la Fiche Technique',
       href: '/docs/fiche-technique-iso45.pdf',
-      variant: 'secondary'
+      variant: 'secondary' as const
     }
   ]
 };
